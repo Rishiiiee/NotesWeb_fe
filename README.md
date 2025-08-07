@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# 📝 Mini Notes Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **basic fullstack web application** built to strengthen backend fundamentals using **Node.js**, **Express**, and **MongoDB**. This mini notes app includes **authentication with JWT**, **password hashing with bcrypt**, and **CRUD operations** for personal notes. The frontend is built with **React.js** and styled using **CSS**.
 
-## Available Scripts
+This project was created as a backend-focused hands-on learning tool, where I implemented essential backend concepts like routing, controllers, models, protected routes, and database operations — all connected to a working frontend.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🔍 Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Users can:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🔐 Register & Log In (with password hashing via **bcrypt**)
+- 🔑 Receive **JWT token** upon login to access protected routes
+- 🗒️ Create personal notes
+- ✏️ Edit & 🗑️ Delete their own notes
+- 📄 View note details on a separate page
 
-### `npm test`
+> 🧠 This project was built with a goal to understand **backend logic**, **authentication**, and **integrating a backend API with a React frontend**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Layer     | Technology                  |
+|-----------|-----------------------------|
+| Frontend  | React.js, CSS               |
+| Backend   | Node.js, Express.js         |
+| Auth      | JWT, bcrypt                 |
+| Database  | MongoDB (Mongoose)          |
+| API Calls | Axios                       |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Features
 
-### `npm run eject`
+- 🧾 Notes List & Detail View
+- 🔐 User Authentication with JWT
+- 🧂 Password Hashing with bcrypt
+- ✍️ Add / Edit / Delete Notes
+- ✅ Protected Routes – only logged-in users can manage notes
+- 🌐 Axios for HTTP Requests
+- 📁 MVC folder structure (routes, controllers, models)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🧪 Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 1️⃣ Clone the Repositories
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/yourusername/notes-web-fe.git
+git clone https://github.com/yourusername/notes-web-be.git
+### 2️⃣ Install Dependencies
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3️⃣ Start React App
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🌄 Screenshots
 
-### Analyzing the Bundle Size
+| Home Page |  <img width="400" height="400" alt="2025-08-07 (4)" src="https://github.com/user-attachments/assets/376440fc-13e7-43b2-9242-3a4c0eb1df9b" /> |
+| Notes Dashboard | <img width="400" height="400" alt="2025-08-07" src="https://github.com/user-attachments/assets/c1e4e20f-0b80-4530-8516-587f5ff3098d" /> |
+ |Notes Detail | <img width="400" height="400" alt="2025-08-07 (2)" src="https://github.com/user-attachments/assets/47e1c3b6-cbd6-4e03-89d5-17b6f9fd9739" /> |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🌐 Live Demo
 
-### Advanced Configuration
+🛍️ Try the Live App(Frontend): [Visit Live Site](https://notes-web-fe.vercel.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+⚙️ Backend API: [Visit Live API](https://notesweb-backend.onrender.com)
 
-### Deployment
+🔐 Auth Flow
+1 : User registers with email & password
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2 : Password is hashed with bcrypt before storing in DB
 
-### `npm run build` fails to minify
+3 : On login, a JWT token is returned
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4 : This token is used to access protected endpoints for note management
+
+> Make sure the backend (e.g., Render or Railway) is active for full functionality like product data, login, and cart management.
+> Free services like Render or Railway may take a few seconds to wake up if idle.
+
+## 👤 Author
+
+**Shrivastav Rishi**  
+
