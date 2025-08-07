@@ -67,13 +67,8 @@ npm start
 
 ## 🌄 Screenshots
 
-|Home Page|
 <img width="400" height="400" alt="2025-08-07 (4)" src="https://github.com/user-attachments/assets/376440fc-13e7-43b2-9242-3a4c0eb1df9b" />
-|
-|Notes Dashboard|
 <img width="400" height="400" alt="2025-08-07" src="https://github.com/user-attachments/assets/c1e4e20f-0b80-4530-8516-587f5ff3098d" />
-|
-|Notes Detail| 
 <img width="400" height="400" alt="2025-08-07 (2)" src="https://github.com/user-attachments/assets/47e1c3b6-cbd6-4e03-89d5-17b6f9fd9739" /> |
 
 
